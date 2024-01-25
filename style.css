@@ -80,6 +80,7 @@ nav{
   z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999 !important;
   background-color: #000000 !important;
 }
+
 .spinner {
     position: absolute;
     width: 9px;
@@ -462,4 +463,5 @@ ul li{
 }
 hr{
   color: orange !important;
+  height: 7px !important;
 }
