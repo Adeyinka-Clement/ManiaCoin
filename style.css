@@ -72,7 +72,13 @@ button{
 
 }
 li a{
-    color: rgb(255, 252, 237) !important;
+    color: white !important;
+}
+nav{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+  background-color: #000000 !important;
 }
 .spinner {
     position: absolute;
@@ -453,4 +459,7 @@ ul li{
   }
 #contain{
     margin-top: 60px !important;
+}
+hr{
+  color: orange !important;
 }
