@@ -176,33 +176,7 @@ li a{
 
 
 
-  #loader-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 9999;
-    visibility: hidden;
-}
 
-#loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 #ulnav{
     background-image: url(Bitcoin.gif) !important;
     background-repeat: no-repeat;
@@ -322,6 +296,161 @@ ul li{
       transform: translate3d(0, -25%, 0);
     }
   }
+
+
+
+
+
+
+
+  .Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(orange, orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute !important;
+    border: none;
+    margin-top: 40vh !important;
+    float: right;
+    right: 30px !important;
+    z-index: 9999999999999999999999999999999 !important;
+  }
+  
+  .arrow path {
+    fill: white;
+  }
+  
+  .text {
+    font-size: 0.7em;
+    width: 100px;
+    /* position: absolute; */
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* bottom: -18px; */
+    opacity: 0;
+    transition-duration: .7s;
+  
+
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .card {
+    overflow: visible;
+    width: 190px;
+  }
+  
+  .content2 {
+    width: 100%;
+    height: 70%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    /* height: 100%; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 180%;
+    background: linear-gradient(90deg, transparent, orange, orange, #ff9966, orange, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content2 {
+    position: absolute;
+    width: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
 #contain{
-    margin-top: 100px !important;
+    margin-top: 60px !important;
 }
