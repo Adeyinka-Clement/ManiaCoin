@@ -155,25 +155,25 @@
             </div>
         </center>
         
-          <div class="card mt-4" style="width: 100% !important; height: 70vh !important; padding: 0px !important;">
-              <div class="content2">
-                <div class="back">
-                  <div class="back-content2">
+          <div class="card mt-4" style="width: 100% !important; height: 70vh !important; padding: 0px !important;" id="stub">
+              <div class="content2" id="stub1">
+                <div class="back" id="stub2">
+                  <div class="back-content2" id="stub3">
             
             
             
-                    <img src="IMG-20220325-WA00031.jpg" alt="" style="width: 100%; " id="firstimg">
+                    <img src="IMG-20220325-WA00031.jpg" alt="" style="width: 100%; " id="stub4">
                 </div>
               </div>
             </div>
             
         
   
-        <button class="Btn ">
-          <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
-        </button>
-      
-    </div>
+            
+          </div>
+          <button class="Btn ">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+          </button>
   </div>
   <center>
     <div class="loader mx-auto" id="loader">
@@ -187,6 +187,11 @@
             if (loader) {
                 loader.style.display = 'none';
                 body.style.display = 'block';
+                stub.style.display = 'block';
+                stub1.style.display = 'block';
+                stub2.style.display = 'block';
+                stub3.style.display = 'block';
+                stub4.style.display = 'block';
                 
 
             }
@@ -198,12 +203,20 @@
             var loader = document.getElementById('loader');
             if (loader) {
                 loader.style.display = 'block';
+                stub.style.display = 'none';
+                stub1.style.display = 'none';
+                stub2.style.display = 'none';
+                stub3.style.display = 'none';
+                stub4.style.display = 'none';
                 body.style.display = 'none';
+
+
                 
                 // Hide the loader after 3 seconds
                 setTimeout(hideLoader, 1500);
             }
         };
+
       </script>
     <script src="js/bootstrap.js"></script>
 </body>
