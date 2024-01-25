@@ -14,12 +14,14 @@
 
 </head>
 <style>
+
  .loader {
-  position: sticky;
   font-size: 16px;
   width: 5.5em;
   height: 5.5em;
-  margin-top: -300px !important;
+  margin-top: 200px !important;
+  position: sticky !important;
+  float: center !important;
 }
 
 .loader:before {
@@ -92,7 +94,7 @@
 }
       
 </style>
-<body id="body">
+<body id="">
     <nav class="navbar navbar-expand-lg pt-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="cropped-ManiaCoin-250-x-150-1-2__2_-removebg-preview.png" alt=""></a>
@@ -125,58 +127,58 @@
           </div>
         </div>
       </nav>
-        <div>
-            <!-- <img src="Currency (1).gif" alt=""> -->
-        </div>    
+            
       </div>
+    <div id="body">
       <center>
-      <h1 class="text-white mt-5"><b>Crypto assets to Naira</b></h1>
-      
-    </center>
-    
-      <center>
-        <div class="container" id="contain">
-            <div class="content">
-              <div class="content__container">
-              
-                <ul class="content__container__list">
-                   <center>
-                <li  class="content__container__list__item text-center  fs-3 ">Crypto Assets</li>
-                  <li class="content__container__list__item text-center fs-3 ">Gift Cards</li>
-                  <li class="content__container__list__item text-center fs-3 ">Buy and Sell</li>
-                  <li class="content__container__list__item text-center fs-3 ">Fast Payment</li>
-                  
-
-                   </center>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <h1 class="text-white mt-5"><b>Crypto assets to Naira</b></h1>
+        
       </center>
       
-        <div class="card mt-4" style="width: 100% !important; height: 70vh !important; padding: 0px !important;">
-            <div class="content2">
-              <div class="back">
-                <div class="back-content2">
-          
-          
-          
-                  <img src="IMG-20220325-WA00031.jpg" alt="" style="width: 100%;  position: absolute !important; ">
+        <center>
+          <div class="container" id="contain">
+              <div class="content">
+                <div class="content__container">
+                
+                  <ul class="content__container__list">
+                     <center>
+                  <li  class="content__container__list__item text-center  fs-3 ">Crypto Assets</li>
+                    <li class="content__container__list__item text-center fs-3 ">Gift Cards</li>
+                    <li class="content__container__list__item text-center fs-3 ">Buy and Sell</li>
+                    <li class="content__container__list__item text-center fs-3 ">Fast Payment</li>
+                    
+  
+                     </center>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          
+        </center>
+        
+          <div class="card mt-4" style="width: 100% !important; height: 70vh !important; padding: 0px !important;">
+              <div class="content2">
+                <div class="back">
+                  <div class="back-content2">
+            
+            
+            
+                    <img src="IMG-20220325-WA00031.jpg" alt="" style="width: 100%; " id="firstimg">
+                </div>
+              </div>
+            </div>
+            
+        
+  
+        <button class="Btn ">
+          <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        </button>
       
-
-      <button class="Btn ">
-        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
-      </button>
-    
-<center>
-  <div class="loader my-auto" id="loader">
-
-</center>    
-        </div>
+    </div>
+  </div>
+  <center>
+    <div class="loader mx-auto" id="loader">
+      </div>
+  </center>    
     
       <script>
          // Function to hide the loader after 3 seconds
@@ -184,6 +186,9 @@
             var loader = document.getElementById('loader');
             if (loader) {
                 loader.style.display = 'none';
+                body.style.display = 'block';
+                
+
             }
         }
 
@@ -193,9 +198,10 @@
             var loader = document.getElementById('loader');
             if (loader) {
                 loader.style.display = 'block';
-
+                body.style.display = 'none';
+                
                 // Hide the loader after 3 seconds
-                setTimeout(hideLoader, 3000);
+                setTimeout(hideLoader, 1500);
             }
         };
       </script>
